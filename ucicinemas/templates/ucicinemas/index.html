@@ -1,0 +1,471 @@
+<!DOCTYPE>
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script src="http://www.polymer-project.org/platform.js"></script>
+<link rel="import" href="jquery.html">
+
+<img class="background-image" src="starWarsWallpaper.jpg">
+<h1 class="title">UCiCinemas</h1>
+
+<meta charset="utf-8">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-inverse">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <a class="navbar-brand" href="#"><img class="uciLogo home"src="logo.png"></a>
+      </div>
+      <ul class="nav navbar-nav">
+        <li class="home"><a href="#">CINEMA</a></li>
+        <li class="films-link"><a href="#">FILMS</a></li>
+        <li class="events-link"><a href="#">EVENTS</a></li>
+        <li><a href="#contact-id">CONTACT</a></li>
+      </ul
+    </div>
+  </nav>
+
+  <div class="content-box">
+    <div class="home-wrapper">
+      <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <a href="#"><img class="poster-image one" src="bladeRunner2049Playbill.jpg"></a>
+        </div>
+        <div class="mySlides fade">
+          <a href="#"><img class="poster-image two" src="starWarsPlaybill.jpg"></a>
+        </div>
+        <div class="mySlides fade">
+          <a href="#"><img class="poster-image three"  src="shapeOfWaterPlaybill.jpg"></a>
+        </div>
+        <div class="mySlides fade">
+          <a href="#"><img class="poster-image four" src="murderOrientExpressPlaybill.jpg"></a>
+        </div>
+        <div class="mySlides fade">
+          <a href="#"><img class="poster-image five" src="thorPlaybill.jpg"></a>
+        </div>
+        <div class="mySlides fade">
+          <a href="#"><img class="poster-image six" src="justiceleaguePlaybill.jpg"></a>
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+
+      <div  class="dots" style="text-align:center; position: relative; top: 65px">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+        <span class="dot" onclick="currentSlide(4)"></span>
+        <span class="dot" onclick="currentSlide(5)"></span>
+        <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+
+      <div class="button-container">
+        <button class="button schedule clicked">SCHEDULE</button>
+        <button class="button events">EVENTS</button>
+        <button class="button coming">COMING</button>
+
+        <div class ="table-div show">
+          <table>
+            <thead>
+              <tr>
+                <th style="text-align: left;">This weekend:</th>
+                <th>Pime-time</th>
+                <th>late-show</th>
+                <th>Room</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th>Murder on the Orient Express</th>
+                <td>20.30</td>
+                <td>23.00</td>
+                <td>1</td>
+              </tr>
+              <tr>
+                <th>Blade Runner 2049</th>
+                <td>20.30</td>
+                <td>22.45</td>
+                <td>2</td>
+              </tr>
+              <tr>
+                <th>Thor: The Dark World</th>
+                <td>20.45</td>
+                <td>22.30</td>
+                <td>3</td>
+              </tr>
+              <tr>
+                <th>The Shape of Water</th>
+                <td>20.45</td>
+                <td>22.15</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <th>Justice League</th>
+                <td>20.30</td>
+                <td>22.45</td>
+                <td>5</td>
+              </tr>
+              <tr>
+                <th>Star Wars: the last Jedi</th>
+                <td>20.30</td>
+                <td>22.45</td>
+                <td>6</td>
+              </tr>
+              </tbody>
+            </table>
+        </div>
+
+        <div class="events-div">
+          <div class="row-one">
+            <a href="#"><img src="art-event.png" style="width: 150px; height: 150px;"></a>
+            <p><h3>ART</h3><br />
+              Lorem ipsum dolor sit amet,
+              consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+              Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+              Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+              deserunt mollit anim id est laborum
+            </p>
+            <a href="https://www.ucicinemas.it/eventi-uci/non-solo-film/arte/" target="_blank"><button class="art-button">KNOW MORE</button></a>
+          </div>
+
+          <div class="row-two">
+            <a href="#"><img src="music-event.png" style="width: 150px; height: 150px;"></a>
+            <p><h3>MUSIC</h3><br />
+              Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum
+            </p>
+            <a href="https://www.ucicinemas.it/eventi-uci/non-solo-film/stagione-classica/" target="_blank"><button class="art-button">KNOW MORE</button></a>
+          </div>
+
+          <div class="row-three">
+            <a href="#"><img src="movie-event.png" style="width: 150px; height: 150px;"></a>
+            <p><h3>MOVIES</h3><br />
+              Lorem ipsum dolor sit amet,
+                consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+                deserunt mollit anim id est laborum!
+              </p>
+            <a href="https://www.ucicinemas.it/eventi-uci/non-solo-film/film-evento/" target="_blank"><button class="art-button">KNOW MORE</button></a>
+          </div>
+        </div>
+
+        <div class="coming-div">
+          <div class="slider-coming">
+            <div class="carousel">
+              <div class="shadow"><a class="carousel-item seven" href="#"><img src="coming8.jpg"></a></div>
+              <div class="shadow"><a class="carousel-item eight" href="#"><img src="coming7.jpg"></a></div>
+              <div class="shadow"><a class="carousel-item nine" href="#"><img src="coming6.jpg"></a></div>
+              <div class="shadow"><a class="carousel-item ten" href="#"><img src="coming5.jpg"></a></div>
+              <div class="shadow"><a class="carousel-item eleven" href="#"><img src="coming4.jpg"></a></div>
+              <div class="shadow"><a class="carousel-item twelve" href="#"><img src="coming3.jpg"></a></div>
+              <div class="shadow"><a class="carousel-item thirt" href="#"><img src="coming2.jpg"></a></div>
+              <div class="shadow"><a class="carousel-item fourt" href="#"><img src="coming1.jpg"></a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="advertisement">
+        <h1>OUR APP</h1>
+        <div class="webApp-ad">
+          <div class="images">
+            <a class="webApp-img1"><img src="webAppUci1.png" style="width: 170px; height: 290px; margin-right: 23px;"></a>
+            <a class="webApp-img2"><img src="webAppUci2.png" style="width: 170px; height: 290px; margin-left: 23px;"></a>
+          </div>
+          <p style="top: 40px; position:relative">Discover our NEW web-app!<br>Now available for iOS, Android and Microsoft.</p>
+          <div class="icons">
+            <i class="fa fa-apple" aria-hidden="true"></i>
+            <i class="fa fa-android" aria-hidden="true"></i>
+            <i class="fa fa-windows" aria-hidden="true"></i>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="films-wrapper hide">
+      <div class="onScreenMovies"><h2><br>On Screens Now</h2></div>
+      <div style="text-align: center;">
+        <a class="onScreen-image one" href="#"><img src="onScreen1.jpg"></a>
+        <a class="onScreen-image five" href="#"><img src="onScreen2.jpg"></a>
+        <a class="onScreen-image three" href="#"><img src="onScreen3.jpg"></a>
+        <a class="onScreen-image four" href="#"><img src="onScreen4.jpg"></a>
+        <a class="onScreen-image six" href="#"><img src="onScreen5.jpg"></a>
+        <a class="onScreen-image two" href="#"><img src="onScreen6.jpg"></a>
+      </div>
+      <div class="comingMovies"><h2>Coming Soon</h2></div>
+      <div style="text-align: center;">
+        <a class="coming-image seven" href="#"><img src="coming8.jpg"></a>
+        <a class="coming-image eight" href="#"><img src="coming7.jpg"></a>
+        <a class="coming-image nine" href="#"><img src="coming6.jpg"></a>
+        <a class="coming-image ten" href="#"><img src="coming5.jpg"></a>
+        <a class="coming-image eleven" href="#"><img src="coming4.jpg"></a>
+        <a class="coming-image twelve" href="#"><img src="coming3.jpg"></a>
+        <a class="coming-image thirt" href="#"><img src="coming2.jpg"></a>
+        <a class="coming-image fourt" href="#"><img src="coming1.jpg"></a>
+      </div>
+    </div>
+
+
+    <div class="information-form">
+      <div class="title-div"><br><h1 id="title"></h1></div>
+      <div class="information-content">
+        <div class="information-img">
+          <img id="img-info" src="">
+        </div>
+        <div class="information-description">
+          <p id="movie-info" style="text-align: left;">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet,
+            consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+            deserunt mollit anim id est laborum.
+          </p>
+
+          <div class="buttons-div">
+            <a href="#video-info"><button class="button-trailer">Trailer</button></a>
+            <br />
+            <button class="button-buyTicket" href="#">Buy Ticket</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="information-video" id="video-info">
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div id="contact-id" class="contact-div">
+      <form class="message-form">
+        <h1>CONTACT US</h1>
+        <input type="text" class="name" value="name:">
+        <input type="text" class="email" value="e-mail:">
+        <input type="text" class="phone-number" value="phone number:">
+        <br><br>
+        <input type="text" class="message" value="type your message here:">
+        <br>
+        <input type="submit" class="submit-button" value="Submit">
+      </form>
+        <p style="padding-top: 15px;">I have read and agree to the Privacy Policy</p>
+        <input type="checkbox"value="other"> Accept
+
+        <div class="icons2">
+          <a href="#"><i class="f fa fa-facebook-official" aria-hidden="true"></i></a>
+          <a href="#"><i class="f fa fa-twitter-square" aria-hidden="true"></i></a>
+          <a href="#"><i class="f fa fa-youtube-play" aria-hidden="true"></i></a>
+        </div>
+        <br><br>
+        <p>POWERED BY A.C.</p>
+      </div>
+  </footer>
+</div>
+
+
+</body>
+
+<script>
+
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+
+<script type="text/javascript">
+
+const array1 = ["Blade Runner: 2049", "bladeRunner2049Playbill.jpg", '<iframe id="video-info" width="100%" height="550" src="https://www.youtube.com/embed/gCcx85zbxz4" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array2 = ["Star Wars: The last Jedi", "starWarsPlaybill.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/Q0CbN8sfihY" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>']
+const array3 = ["The Shape of Water", "shapeOfWaterPlaybill.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/D_GKioYh5lA" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>']
+const array4 = ["Murder on the Orient Express", "murderOrientExpressPlaybill.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/Mq4m3yAoW8E" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>']
+const array5 = ["Thor: Ragnarok", "thorPlaybill.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/ue80QwXMRHg" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>']
+const array6 = ["Justice League", "justiceleaguePlaybill.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/r9-DM9uBtVI" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>']
+
+const array7 = ["In the Fade", "coming8.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/UyjnzhXJlHU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array8 = ["Hostiles", "coming7.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/vJz5l5ru7ws" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array9 = ["Ferdinand", "coming6.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/HBXVM7oUPVk" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array10 = ["The Great Showman", "coming5.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/AXCTMGYUg9A" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array11 = ["Last Call Pitches", "coming4.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/qZkuyLsN3gM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array12 = ["Ballad Lefty Brown", "coming3.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/Sv2khM97ylU" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array13 = ["Beyond Skyline", "coming2.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/M2w1HMGaqFM" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+const array14 = ["Just getting started", "coming1.jpg", '<iframe width="100%" height="550" src="https://www.youtube.com/embed/Lo5YcAYSVac" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>'];
+
+  $(document).ready(() => {
+    $('.schedule').on('click', event => {
+      $('.table-div').siblings().removeClass('show inline');
+      $('.button-container').removeClass('shorten');
+      $('.table-div').addClass('show');
+    });
+
+    $('.events').on('click', event => {
+      $('.events-div').siblings().removeClass('show');
+      $('.button-container').removeClass('shorten');
+        $('.events-div').addClass('show inline');
+    });
+
+    $('.coming').on('click', event => {
+      $('.coming-div').siblings().removeClass('show');
+      $('.button-container').addClass('shorten');
+        $('.coming-div').addClass('show');
+    });
+
+    $('.button').on('click', event => {
+      $(event.currentTarget).siblings().removeClass('clicked');
+      $(event.currentTarget).addClass('clicked');
+    });
+
+    $('.films-link').on('click', event => {
+      $(".films-wrapper").removeClass("hide");
+      $(".content-box").addClass("shorten2");
+      $(".content-box").css("height", "1530");
+      $(".films-wrapper").siblings().addClass("hide");
+    });
+
+    $('.events-link').on('click', event => {
+      $('.events').click();
+    });
+
+    $('.home').on('click', event => {
+      $(".home-wrapper").removeClass("hide");
+      $(".content-box").removeClass("shorten2");
+      $(".content-box").css("height", "1530");
+      $(".home-wrapper").siblings().addClass("hide");
+    });
+
+    $('img').on('click', event => {
+      $(".information-form").removeClass("hide");
+      $(".content-box").removeClass("shorten2");
+      $(".information-form").siblings().addClass("hide");
+      $(".content-box").css("height", "1035");
+    });
+
+    $('.one').on('click', () => {
+      sendParamenters(array1);
+    });
+
+    $('.two').on('click', () => {
+      sendParamenters(array2);
+    });
+
+    $('.three').on('click', () => {
+      sendParamenters(array3);
+    });
+
+    $('.four').on('click', () => {
+      sendParamenters(array4);
+    });
+
+    $('.five').on('click', () => {
+      sendParamenters(array5);
+    });
+
+    $('.six').on('click', () => {
+      sendParamenters(array6);
+    });
+
+    $('.seven').on('click', () => {
+      sendParamenters(array7);
+    });
+
+    $('.eight').on('click', () => {
+      sendParamenters(array8);
+    });
+
+    $('.nine').on('click', () => {
+      sendParamenters(array9);
+    });
+
+    $('.ten').on('click', () => {
+      sendParamenters(array10);
+    });
+
+    $('.eleven').on('click', () => {
+      sendParamenters(array11);
+    });
+
+    $('.twelve').on('click', () => {
+      sendParamenters(array12);
+    });
+
+    $('.thirt').on('click', () => {
+      sendParamenters(array13);
+    });
+
+    $('.fourt').on('click', () => {
+      sendParamenters(array14);
+    });
+});
+</script>
+
+<script>
+
+function sendParamenters(elementsArray) {
+      const xhr = new XMLHttpRequest();
+      xhr.responseType = 'json';
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState === XMLHttpRequest.DONE) {
+          document.getElementById("title").innerHTML = elementsArray[0];
+          document.getElementById("img-info").src = elementsArray[1];
+          document.getElementById("video-info").innerHTML = elementsArray[2];
+        }
+      };
+
+      xhr.open('GET', elementsArray[0], elementsArray[1], elementsArray[2]);
+      xhr.send();
+}
+
+</script>
+</html>
