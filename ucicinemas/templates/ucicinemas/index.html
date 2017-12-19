@@ -164,7 +164,7 @@
       <div class="onScreenMovies"><h2><br>On Screens Now</h2></div>
       <div style="text-align: center;">
         {% for movie in movies %}
-          {% if movie.onScreen == False %}
+          {% if movie.onScreen == True %}
             <a class="onScreen-image" href="#"><img src={{movie.poster}}></a>
           {% endif %}
         {% endfor %}
