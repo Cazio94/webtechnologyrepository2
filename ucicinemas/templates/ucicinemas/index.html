@@ -163,23 +163,20 @@
     <div class="films-wrapper hide">
       <div class="onScreenMovies"><h2><br>On Screens Now</h2></div>
       <div style="text-align: center;">
-        <a class="onScreen-image one" href="#"><img src="onScreen1.jpg"></a>
-        <a class="onScreen-image five" href="#"><img src="onScreen2.jpg"></a>
-        <a class="onScreen-image three" href="#"><img src="onScreen3.jpg"></a>
-        <a class="onScreen-image four" href="#"><img src="onScreen4.jpg"></a>
-        <a class="onScreen-image six" href="#"><img src="onScreen5.jpg"></a>
-        <a class="onScreen-image two" href="#"><img src="onScreen6.jpg"></a>
+        {% for movie in movies %}
+          {% if movie.onScreen == False %}
+            <a class="onScreen-image" href="#"><img src={{movie.poster}}></a>
+          {% endif %}
+        {% endfor %}
+
       </div>
       <div class="comingMovies"><h2>Coming Soon</h2></div>
       <div style="text-align: center;">
-        <a class="coming-image seven" href="#"><img src="coming8.jpg"></a>
-        <a class="coming-image eight" href="#"><img src="coming7.jpg"></a>
-        <a class="coming-image nine" href="#"><img src="coming6.jpg"></a>
-        <a class="coming-image ten" href="#"><img src="coming5.jpg"></a>
-        <a class="coming-image eleven" href="#"><img src="coming4.jpg"></a>
-        <a class="coming-image twelve" href="#"><img src="coming3.jpg"></a>
-        <a class="coming-image thirt" href="#"><img src="coming2.jpg"></a>
-        <a class="coming-image fourt" href="#"><img src="coming1.jpg"></a>
+        {% for movie in movies %}
+          {% if movie.onScreen == False %}
+            <a class="coming-image" href="#"><img src={{movie.poster}}></a>
+          {% endif %}
+        {% endfor %}
       </div>
     </div>
 
