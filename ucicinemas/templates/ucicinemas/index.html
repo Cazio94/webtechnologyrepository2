@@ -177,14 +177,11 @@
         <div class="coming-div">
           <div class="slider-coming">
             <div class="carousel">
-              <div class="shadow"><a class="carousel-item seven" href="#"><img src="coming8.jpg"></a></div>
-              <div class="shadow"><a class="carousel-item eight" href="#"><img src="coming7.jpg"></a></div>
-              <div class="shadow"><a class="carousel-item nine" href="#"><img src="coming6.jpg"></a></div>
-              <div class="shadow"><a class="carousel-item ten" href="#"><img src="coming5.jpg"></a></div>
-              <div class="shadow"><a class="carousel-item eleven" href="#"><img src="coming4.jpg"></a></div>
-              <div class="shadow"><a class="carousel-item twelve" href="#"><img src="coming3.jpg"></a></div>
-              <div class="shadow"><a class="carousel-item thirt" href="#"><img src="coming2.jpg"></a></div>
-              <div class="shadow"><a class="carousel-item fourt" href="#"><img src="coming1.jpg"></a></div>
+              {% for movie in movies %}
+                {% if movie.onScreen == False %}
+                <div class="shadow"><a class="carousel-item" href="#"><img src={{movie.poster}}></a></div>
+                {% endif %}
+              {% endfor %}
             </div>
           </div>
         </div>
