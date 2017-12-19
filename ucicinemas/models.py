@@ -11,6 +11,10 @@ class Movie(models.Model) :
     trailer = models.URLField()
     poster = models.URLField()
     main_image = models.URLField()
+    prime_time = models.CharField(max_length=5)
+    late_show = models.CharField(max_length=5)
+    room = models.CharField(max_length=2)
+    onScreen = models.BooleanField(default=False)
 
 
 def publish(self):
