@@ -68,12 +68,9 @@
       </div>
 
       <div  class="dots" style="text-align:center; position: relative; top: 65px">
+      {% for movie in movies %}
         <span class="dot" onclick="currentSlide(1)"></span>
-        <span class="dot" onclick="currentSlide(2)"></span>
-        <span class="dot" onclick="currentSlide(3)"></span>
-        <span class="dot" onclick="currentSlide(4)"></span>
-        <span class="dot" onclick="currentSlide(5)"></span>
-        <span class="dot" onclick="currentSlide(6)"></span>
+      {% endfor %}
       </div>
 
       <div class="button-container">
