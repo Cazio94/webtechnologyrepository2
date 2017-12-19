@@ -89,13 +89,20 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <th>Murder on the Orient Express</th>
-                <td>20.30</td>
-                <td>23.00</td>
-                <td>1</td>
-              </tr>
-              <tr>
+              {%for movie in movies%}
+                <script>
+                  if({movie.onScreen} == True)
+                    document.Write(
+                      <tr>
+                        <th>{movie.title}</th>
+                        <td>{movie.prime_time}</td>
+                        <td>{movie.late_show}</td>
+                        <td>{movie.room}</td>
+                      </tr>
+                    );
+                </script>
+              {%endfor%}
+              <!-- <tr>
                 <th>Blade Runner 2049</th>
                 <td>20.30</td>
                 <td>22.45</td>
@@ -124,7 +131,7 @@
                 <td>20.30</td>
                 <td>22.45</td>
                 <td>6</td>
-              </tr>
+              </tr> -->
               </tbody>
             </table>
         </div>
