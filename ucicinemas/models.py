@@ -7,9 +7,8 @@ class Movie(models.Model) :
     description = models.TextField(max_length=500)
     release_date = models.CharField(max_length=10)
     duration = models.CharField(max_length=10)
-    Director = models.CharField(max_length=25)
+    director = models.CharField(max_length=25)
     trailer = models.URLField()
-    Movieimage = models.URLField()
     poster = models.URLField()
 
 def publish(self):
