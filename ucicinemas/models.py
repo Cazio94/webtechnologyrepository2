@@ -12,6 +12,7 @@ class Movie(models.Model) :
     poster = models.URLField()
     image = models.URLField()
 
+
 def publish(self):
     return self.save()
 
