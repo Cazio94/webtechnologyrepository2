@@ -1,0 +1,630 @@
+body {
+    background-color: #001C3A!important;
+}
+
+.title {
+  color: #e4c405;
+  font-size: 100px;
+  text-align: center;
+  font-family: -webkit-pictograph;
+  text-shadow: 0px 0px 15px white;
+  margin: 0;
+}
+
+.container-fluid {
+  padding: 15px;
+  background: #00244d;
+  border-radius: 40px;
+}
+
+.uciLogo {
+    position: relative;
+    bottom: 234%;
+    left: -13%;
+}
+
+.navbar-inverse {
+
+  position: relative;
+  width: 70%;
+  margin: auto;
+  box-shadow: 0px 0px 12px darkgrey;
+  border-radius: 40px !important;
+
+}
+
+.navbar-brand {
+  width: 160px;
+}
+
+.background-image {
+    width: 100%;
+    height: 100%;
+    z-index: -5;
+    position: fixed;
+}
+
+ .navbar-inverse .navbar-nav li a{
+    color: white !important;
+    padding: 15px;
+    font-size: x-large;
+    margin-right: 15px;
+    font-family: fantasy;
+}
+
+.navbar-inverse .navbar-nav li a:hover {
+  color: #ffda00!important;
+}
+
+.hide {
+  display: none;
+}
+
+.content-box {
+  position: relative;
+  top: 10px;
+  width: 62%;
+  height: 1530px;
+  border-radius: 25px;
+  overflow: hidden;
+  perspective: 1px;
+  margin: auto;
+  background-color: inherit;
+  box-shadow: 0px 0px 50px #574843;
+}
+
+.onScreenMovies {
+  width: 100%;
+  height: 61px;
+  position: relative;
+  top: -42px;
+  color: #003094;
+  font-family: fantasy;
+  background-color: #fed900;
+}
+
+.comingMovies {
+  width: 100%;
+  height: 35px;
+  top: 2px;
+  margin-bottom: 15px;
+  position: relative;;
+  color: #003094;
+  font-family: fantasy;
+  background-color: #fed900;
+}
+.coming-image img, .onScreen-image img{
+  width: 150px;
+  height: 220px;
+  margin-bottom: 5px;
+  margin-top : 17px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.mySlides {
+  display: none
+}
+
+.slideshow-container {
+  max-width: 100%;
+  height: 500px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+ .poster-image{
+  width: 100%;
+  height: 600px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  opacity: 1!important;
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.button-container {
+  width: 90%;
+  position: relative;
+  height: 370px;
+  margin: auto;
+  text-align: center;
+  top: 110px;
+  color: inherit;
+  box-shadow: 0px 0px 5px black;
+}
+
+.button {
+  text-align: center;
+  background-color: inherit;
+  height: 35px;
+  margin: auto;
+  width: 33%;
+  color: white;
+  font-family: fantasy;
+  font-size: 18px;
+}
+
+.clicked {
+  border-color: yellow;
+  background-color: yellow;
+  color: darkblue;
+}
+
+.table-div {
+  display: none;
+}
+
+.inline {
+  display: unset;
+}
+
+table {
+  margin: auto;
+  position: relative;
+  top: 10px;
+  width: 95%;
+}
+
+thead th {
+
+  color: white;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  font-weight: 100;
+  text-align: right;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+tr {
+
+  border-bottom: 1px solid #FFF;
+  margin-bottom: 5px;
+}
+
+th, td {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  width: 25%;
+  padding: 10px !important;
+  text-align: right;
+}
+
+
+td {
+  padding: 5px!important;
+}
+
+
+table, th, td {
+  color: white;
+}
+
+.events-div {
+  display: none;
+  width: 99.9%;
+  height: 90%;
+  overflow: overlay;
+  margin-top: 2PX;
+  color: white;
+}
+
+.events-div .row-one, .row-two, .row-three {
+  text-align: center;
+  display: table-cell;
+  height: 99%;
+}
+
+.events-div p {
+  text-align: left;
+  width: 350px;
+  position: relative;
+  top: 55px;
+}
+
+.events-div button {
+  width: 110px;
+  height: 30px;
+  text-align: center;
+  color: white;
+  background-color: inherit;
+}
+
+.events-div button:hover {
+  color: darkblue;
+  background-color: yellow;
+}
+
+.coming-div {
+  display: none;
+}
+
+.slider-coming {
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  overflow: overlay;
+  height: 223px;
+  border-bottom-left-radius: 65px;
+  border-bottom-right-radius: 65px;
+
+}
+
+.carousel {
+  display: inline-flex;
+}
+
+.carousel img {
+  width: 145px;
+  margin-top: 11px;
+  padding-right: 5px;
+  height: 200px;
+}
+
+.shadow {
+  background-color: black;
+  width: 145px;
+  height: 200px;
+  opacity: 0.2;
+}
+
+.shadow:hover {
+  opacity: 1;
+}
+
+.carousel img:hover {
+  width: 150px;
+  margin-top: 4px;
+  height: 215px;
+  transition: 0.25s;
+  z-index: 10;
+  position: relative;
+  right: 4px;
+}
+
+.shorten {
+  height: 256px!important;
+  border-bottom-right-radius: 65px;
+  border-bottom-left-radius: 65px;
+}
+
+.shorten2 {
+  height: 800px!important;
+  overflow: auto;
+}
+
+
+.advertisement {
+  position: relative;
+  top: 150px;
+  text-align: left;
+  color: white;
+  font-family: fantasy;
+  font-size: larger;
+}
+
+.webApp-ad {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  background-color: black;
+  color: white;
+}
+
+.images {
+  position: relative;
+  top: 25px;
+}
+
+.icons {
+  position: relative;
+  top: 40px;
+}
+
+footer {
+    position: relative;
+    top: 35px;
+    margin: auto;
+    width: 70%;
+    background-color: #001C3A;
+    border-top-left-radius: 65px;
+    border-top-right-radius: 65px;
+}
+
+.contact-div {
+  top: 20px;
+  text-align: center;
+  width: 100%;
+  font-family: fantasy;
+  color: white;
+  height: 500px;
+  background-color: #001C3A;
+  box-shadow: 0px 0px 12px darkgrey;
+  border-top-left-radius: 65px;
+  border-top-right-radius: 65px;
+}
+
+.message-form{
+  top: 20px;
+  position: relative;
+}
+
+.name, .email, .message, .phone-number {
+  color: white;
+  background-color: #001C3A;
+
+}
+
+.name, .email, .phone-number {
+  width: 250px;
+  top: 10px;
+  height: 30px;
+  position: relative;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-bottom: thin white solid;
+}
+
+.message {
+  width: 800px;
+  height:150PX;
+  border: thin solid white;
+
+}
+
+.submit-button {
+  height: 30px;
+  width: 803px;
+  background-color: yellow;
+  color: darkblue;
+}
+
+.icons2 {
+  position: relative;
+  top: 25px;
+  left: 32px;
+}
+
+.icons2 .fa {
+  color: white;
+  font-size: xx-large;
+  margin-right: 50px;
+}
+
+.icons2 .fa:hover {
+    border-bottom: thick solid white;
+}
+
+.title-div {
+  position: relative;
+  height: 73px;
+  font-family: fantasy;
+  background-color: yellow;
+  color: darkblue;
+  bottom: 20px;
+  text-align: left;
+  border: thin black;
+}
+
+.information-form {
+    width: 100%;
+    position: relative;
+    margin: auto;
+    background-color: inherit;
+}
+
+.information-img img{
+  width: 100%;
+  height: 35%;
+}
+
+.information-content{
+  display: flex;
+  margin: auto;
+  width: 85%;
+}
+
+.information-img {
+  position: relative;
+  width: 45%;
+}
+
+.information-description {
+  color: white;
+  width: 55%;
+  overflow: auto;
+  height: 35%;
+  position: relative;
+  margin-left: 10px
+}
+
+.information-video {
+  text-align: center;
+  position: relative;
+  top: 50px;
+  overflow: auto;
+}
+
+.buttons-div button {
+  font-family: fantasy;
+  width: 220px;
+  height: 45px;
+  margin-bottom: 10px;
+  background-color: yellow;
+  color: darkblue;
+}
+
+.buttons-div {
+  text-align: left;
+  margin: auto;
+  position: relative;
+  top: 27px;S
+}
+
+/* On smaller screens, decrease text size */
+/*@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
+}*/
+
+@media only screen and (max-width: 1401px) {
+  .button {
+      width: 32%;
+  }
+}
+
+@media only screen and (max-width: 1330px) {
+  .button-container {
+      height: 450px;
+  }
+
+  .content-box {
+      height: 1615px;
+  }
+}
+
+@media only screen and (max-width: 1160px){
+  .submit-button, .message {
+    width: 55%;
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 1030px) {
+  .navbar-inverse .navbar-nav li a {
+    margin-right: 0px;
+    }
+
+  .poster-image {
+    height: 380px!important;
+  }
+
+  .prev, .next {
+    top: 35%;
+  }
+
+  .dots{
+    top: -150px!important;
+  }
+
+  .button-container{
+    top:-110px;
+    height: 480;
+  }
+
+  .advertisement {
+    top: -50px;
+  }
+
+  .content-box {
+      height: 1440px;
+  }
+}
+
+@media only screen and (max-width: 830px) {
+  .navbar-inverse{
+    width: 78%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-inverse .navbar-nav li a {
+     margin: auto;
+     text-align: center;
+     bottom: 0;
+     border-top: solid white thin;
+   }
+
+   .uciLogo {
+       position: relative;
+       bottom: 420%;
+       left: 100 auto %;
+   }
+
+   .navbar-inverse {
+       margin-top: 65px;
+       width: 70%;
+   }
+
+   .webApp-img2 {
+     display: none;
+   }
+
+   .webAppimg1 {
+     margin-right: 0!important;
+   }
+
+   .numberText img {
+     height: ;
+   }
+
+
+
+}

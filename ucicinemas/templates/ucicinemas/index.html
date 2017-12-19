@@ -1,8 +1,10 @@
 <!DOCTYPE>
+
+{% load staticfiles %}
 <html>
 <head>
 
-<link rel="stylesheet" type="text/css" href="stylesheet.css">
+<link rel="stylesheet" href="{% static 'css/stylesheet.css' %}">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
@@ -32,11 +34,17 @@
     </div>
   </nav>
 
+
   <div class="content-box">
     <div class="home-wrapper">
       <div class="slideshow-container">
 
-        <div class="mySlides fade">
+        {% for movie in movies %}
+          <div class="mySlides fade">
+            <a href="#"><img class="poster-image" src="{{ movie.poster }}"></a>
+          </div>
+        {% endfor %}
+        <!-- <div class="mySlides fade">
           <a href="#"><img class="poster-image one" src="bladeRunner2049Playbill.jpg"></a>
         </div>
         <div class="mySlides fade">
@@ -53,7 +61,7 @@
         </div>
         <div class="mySlides fade">
           <a href="#"><img class="poster-image six" src="justiceleaguePlaybill.jpg"></a>
-        </div>
+        </div> -->
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
