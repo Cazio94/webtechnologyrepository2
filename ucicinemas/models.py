@@ -9,7 +9,7 @@ class Movie(models.Model) :
     duration = models.CharField(max_length=10)
     Director = models.CharField(max_length=25)
     trailer = models.URLField()
-    image = models.URLField()
+    Movieimage = models.URLField()
     poster = models.URLField()
 
 def publish(self):
