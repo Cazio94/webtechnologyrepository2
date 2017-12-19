@@ -92,10 +92,10 @@
               {% for movie in movies %}
                 {% if movie.onScreen == True %}
                   <tr>
-                    <th>{movie.title}</th>
-                    <td>{movie.prime_time}</td>
-                    <td>{movie.late_show}</td>
-                    <td>{movie.room}</td>
+                    <th>{{movie.title}}</th>
+                    <td>{{movie.prime_time}}</td>
+                    <td>{{movie.late_show}}</td>
+                    <td>{{movie.room}}</td>
                   </tr>
                 {% endif %}
               {% endfor %}
