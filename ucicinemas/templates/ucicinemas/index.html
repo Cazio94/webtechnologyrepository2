@@ -40,37 +40,23 @@
       <div class="slideshow-container">
 
         {% for movie in movies %}
-          <div class="mySlides fade">
-            <a href="#"><img class="poster-image" src="{{ movie.main_image }}"></a>
-          </div>
+          {% if movie.onScreen == True %}
+            <div class="mySlides fade">
+              <a href="#"><img class="poster-image" src="{{ movie.main_image }}"></a>
+            </div>
+          {% endif %}
         {% endfor %}
-        <!-- <div class="mySlides fade">
-          <a href="#"><img class="poster-image one" src="bladeRunner2049Playbill.jpg"></a>
-        </div>
-        <div class="mySlides fade">
-          <a href="#"><img class="poster-image two" src="starWarsPlaybill.jpg"></a>
-        </div>
-        <div class="mySlides fade">
-          <a href="#"><img class="poster-image three"  src="shapeOfWaterPlaybill.jpg"></a>
-        </div>
-        <div class="mySlides fade">
-          <a href="#"><img class="poster-image four" src="murderOrientExpressPlaybill.jpg"></a>
-        </div>
-        <div class="mySlides fade">
-          <a href="#"><img class="poster-image five" src="thorPlaybill.jpg"></a>
-        </div>
-        <div class="mySlides fade">
-          <a href="#"><img class="poster-image six" src="justiceleaguePlaybill.jpg"></a>
-        </div> -->
 
         <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
         <a class="next" onclick="plusSlides(1)">&#10095;</a>
       </div>
 
       <div  class="dots" style="text-align:center; position: relative; top: 65px">
-      {% for movie in movies %}
-        <span class="dot" onclick="currentSlide(1)"></span>
-      {% endfor %}
+        {% for movie in movies %}
+          {% if movie.onScreen == True %}
+            <span class="dot" onclick="currentSlide(1)"></span>
+          {% endif %}
+        {% endfor %}
       </div>
 
       <div class="button-container">
@@ -99,38 +85,8 @@
                   </tr>
                 {% endif %}
               {% endfor %}
-              <!-- <tr>
-                <th>Blade Runner 2049</th>
-                <td>20.30</td>
-                <td>22.45</td>
-                <td>2</td>
-              </tr>
-              <tr>
-                <th>Thor: The Dark World</th>
-                <td>20.45</td>
-                <td>22.30</td>
-                <td>3</td>
-              </tr>
-              <tr>
-                <th>The Shape of Water</th>
-                <td>20.45</td>
-                <td>22.15</td>
-                <td>4</td>
-              </tr>
-              <tr>
-                <th>Justice League</th>
-                <td>20.30</td>
-                <td>22.45</td>
-                <td>5</td>
-              </tr>
-              <tr>
-                <th>Star Wars: the last Jedi</th>
-                <td>20.30</td>
-                <td>22.45</td>
-                <td>6</td>
-              </tr> -->
-              </tbody>
-            </table>
+            </tbody>
+          </table>
         </div>
 
         <div class="events-div">
