@@ -89,17 +89,10 @@
               </tr>
             </thead>
             <tbody>
-              {%for movie in movies%}
+              {% for movie in movies %}
                 <script>
                   if({movie.onScreen} == True)
-                    document.Write(
-                      <tr>
-                        <th>{movie.title}</th>
-                        <td>{movie.prime_time}</td>
-                        <td>{movie.late_show}</td>
-                        <td>{movie.room}</td>
-                      </tr>
-                    );
+                    document.Write("<tr><th>{movie.title}</th><td>{movie.prime_time}</td><td>{movie.late_show}</td><td>{movie.room}</td></tr>");
                 </script>
               {%endfor%}
               <!-- <tr>
