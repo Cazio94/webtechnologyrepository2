@@ -19,18 +19,16 @@ body {
 
 .uciLogo {
     position: relative;
-    bottom: 234%;
+    bottom: 50px;
     left: -13%;
 }
 
 .navbar-inverse {
-
   position: relative;
   width: 70%;
   margin: auto;
   box-shadow: 0px 0px 12px darkgrey;
   border-radius: 40px !important;
-
 }
 
 .navbar-brand {
