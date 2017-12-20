@@ -41,7 +41,7 @@
         {% for movie in movies %}
           {% if movie.onScreen == True %}
             <div class="mySlides fade">
-              <a href="#"><img class="poster-image source {{movies.id}}" src="{{ movie.main_image }}"></a>
+              <a href="#"><img class="poster-image source {{movie.id}}" src="{{movie.main_image}}"></a>
             </div>
           {% endif %}
         {% endfor %}
@@ -187,14 +187,13 @@
           <img id="img-info" src="">
         </div>
         <div class="information-description">
-          <p id="movie-info" style="text-align: left;">
-
-          </p>
-
+          <p id="movie-info" style="text-align: left;"></p>
+          <p class="movie-duration"></p>
+          <p class="director"></p>
           <div class="buttons-div">
-            <a href="#video-info"><button class="button-trailer">Trailer</button></a>
-            <br />
-            <button class="button-buyTicket" href="#">Buy Ticket</button>
+              <a href="#video-info"><button class="button-trailer">Trailer</button></a>
+              <br />
+              <button class="button-buyTicket" href="#">Buy Ticket</button>
           </div>
         </div>
       </div>
@@ -335,6 +334,9 @@ function sendParamenters(elementsArray) {
         if (xhr.readyState === XMLHttpRequest.DONE) {
           document.getElementById("title").innerHTML = elementsArray[0];
           document.getElementById("img-info").src = elementsArray[1];
+          document.getElementById("movie-duration").innerHTML = elementsArray[2];
+          document.getElementsById('director').innerHTML = elementsArray[3];
+          document.getElementById('movie-info').innerHTML = elementsArray[4];
           document.getElementById("video-info").innerHTML = elementsArray[5];
         }
       };
