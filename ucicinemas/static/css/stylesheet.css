@@ -66,11 +66,15 @@ body {
   width: 62%;
   height: 1530px;
   border-radius: 25px;
-  overflow: auto;
+  overflow: hidden;
   perspective: 1px;
   margin: auto;
   background-color: inherit;
   box-shadow: 0px 0px 50px #574843;
+}
+
+.overflow {
+  overflow: auto!important;
 }
 
 .onScreenMovies {
