@@ -6,7 +6,7 @@ body {
   color: #e4c405;
   font-size: 100px;
   text-align: center;
-  font-family: -webkit-pictograph;
+  font-family: initial;
   text-shadow: 0px 0px 15px white;
   margin: 0;
 }
@@ -274,7 +274,7 @@ table, th, td {
   display: none;
   width: 99.9%;
   height: 90%;
-  overflow: overlay;
+  overflow: auto;
   margin-top: 2PX;
   color: white;
 }
@@ -313,7 +313,7 @@ table, th, td {
   width: 100%;
   background-color: black;
   opacity: 0.8;
-  overflow: overlay;
+  overflow: auto;
   height: 223px;
   border-bottom-left-radius: 65px;
   border-bottom-right-radius: 65px;
