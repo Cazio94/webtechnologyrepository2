@@ -74,7 +74,7 @@ body {
 }
 
 .overflow {
-  overflow: auto!important;
+  overflow: scroll!important;
 }
 
 .onScreenMovies {
@@ -505,7 +505,7 @@ footer {
 .information-description {
   color: white;
   width: 71%;
-  overflow: auto;
+  overflow: scroll;
   position: relative;
 }
 
