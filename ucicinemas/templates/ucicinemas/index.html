@@ -283,10 +283,10 @@ function showSlides(n) {
 
 
 <script type="text/javascript">
-
-{% for movie in movies %}
-  eval("const array"+{{movie.id}}+"= ['{{movie.title}}', '{{movie.poster}}', '{{movie.duration}}', '{{movie.director}}', '{{movie.description}}','{{movie.trailer}}']");
-{% endfor %}
+//
+// {% for movie in movies %}
+//   eval("const array"+{{movie.id}}+"= ['{{movie.title}}', '{{movie.poster}}', '{{movie.duration}}', '{{movie.director}}', '{{movie.description}}','{{movie.trailer}}']");
+// {% endfor %}
 
   $(document).ready(() => {
     $('.schedule').on('click', event => {
@@ -336,12 +336,12 @@ function showSlides(n) {
       $(".information-form").siblings().addClass("hide");
       $(".content-box").css("height", "1035");
     });
-
-    {% for movie in movies %}
-      $('.source .{{movie.id}}').on('click', () => {
-        eval("sendParamenters(array"+{{movie.id}}+");");
-      });
-    {% endfor %}
+    // 
+    // {% for movie in movies %}
+    //   $('.source .{{movie.id}}').on('click', () => {
+    //     eval("sendParamenters(array"+{{movie.id}}+");");
+    //   });
+    // {% endfor %}
 });
 </script>
 
