@@ -266,7 +266,7 @@ function showSlides(n) {
 <script type="text/javascript">
 
   {% for movie in movies %}
-    eval("const array"+{{movie.id}}+"= ['{{movie.title}}', '{{movie.poster}}', '{{movie.duration}}', '{{movie.director}}', '{{movie.description}}','{{movie.trailer}}']");
+    const array{{movie.id}} = ["{{movie.title}}", "{{movie.poster}}", "{{movie.duration}}", "{{movie.director}}", "{{movie.description}}", "{{movie.trailer}}"];
   {% endfor %}
 
   $(document).ready(() => {
