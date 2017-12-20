@@ -319,7 +319,7 @@ function showSlides(n) {
     });
 
     {% for movie in movies %}
-      $('.source .{{movie.id}}').on('click', () => {
+      $('.{{movie.id}}').on('click', () => {
         sendParamenters(array{{movie.id}});
       });
     {% endfor %}
