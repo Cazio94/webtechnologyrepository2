@@ -286,7 +286,7 @@ function showSlides(n) {
 <script type="text/javascript">
 
 {% for movie in movies %}
-  eval("const array"+forloop.counter+"= ['{{movie.title}}', '{{movie.poster}}', '{{movie.duration}}', '{{movie.director}}', '{{movie.description}}','{{movie.trailer}}']");
+  eval("const array"+{{movie.id}}+"= ['{{movie.title}}', '{{movie.poster}}', '{{movie.duration}}', '{{movie.director}}', '{{movie.description}}','{{movie.trailer}}']");
 {% endfor %}
 
   $(document).ready(() => {
@@ -338,61 +338,11 @@ function showSlides(n) {
       $(".content-box").css("height", "1035");
     });
 
-    $('.one').on('click', () => {
-      sendParamenters(array);
-    });
-
-    $('.two').on('click', () => {
-      sendParamenters(array2);
-    });
-
-    $('.three').on('click', () => {
-      sendParamenters(array3);
-    });
-
-    $('.four').on('click', () => {
-      sendParamenters(array4);
-    });
-
-    $('.five').on('click', () => {
-      sendParamenters(array5);
-    });
-
-    $('.six').on('click', () => {
-      sendParamenters(array6);
-    });
-
-    $('.seven').on('click', () => {
-      sendParamenters(array7);
-    });
-
-    $('.eight').on('click', () => {
-      sendParamenters(array8);
-    });
-
-    $('.nine').on('click', () => {
-      sendParamenters(array9);
-    });
-
-    $('.ten').on('click', () => {
-      sendParamenters(array10);
-    });
-
-    $('.eleven').on('click', () => {
-      sendParamenters(array11);
-    });
-
-    $('.twelve').on('click', () => {
-      sendParamenters(array12);
-    });
-
-    $('.thirt').on('click', () => {
-      sendParamenters(array13);
-    });
-
-    $('.fourt').on('click', () => {
-      sendParamenters(array14);
-    });
+    {% for movie in movies %}
+      $('.source .{{movie.id}}').on('click', () => {
+        eval("sendParamenters(array"+{{movie.id}}+");")
+      });
+    {% endfor %}
 });
 </script>
 
@@ -405,7 +355,7 @@ function sendParamenters(elementsArray) {
         if (xhr.readyState === XMLHttpRequest.DONE) {
           document.getElementById("title").innerHTML = elementsArray[0];
           document.getElementById("img-info").src = elementsArray[1];
-          document.getElementById("video-info").innerHTML = elementsArray[2];
+          document.getElementById("video-info").innerHTML = elementsArray[5];
         }
       };
 
