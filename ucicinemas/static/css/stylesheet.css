@@ -475,29 +475,29 @@ footer {
 }
 
 .information-form {
-    width: 80%;
+    width: 100%;
     position: relative;
     margin: auto;
+    height: 100%;
     background-color: inherit;
 }
 
-.information-content{
+.information-content {
   display: flex;
   margin: auto;
+  height: 35%;
   width: 80%;
 }
 
-.information-img {
-  position: relative;
-  width: 40%;
-  height: 400px;
+.information-img img {
+  height: 100%;
+  width: 99%;
 }
 
 .information-description {
   color: white;
-  width: 60%;
+  width: 145%;
   overflow: auto;
-  height: 400px;
   position: relative;
 }
 
