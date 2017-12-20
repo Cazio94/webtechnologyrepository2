@@ -320,7 +320,7 @@ function showSlides(n) {
 
     {% for movie in movies %}
       $('.source .{{movie.id}}').on('click', () => {
-        console.log(eval("sendParamenters(array"+{{movie.id}}+");"));
+        eval("sendParamenters(array"+{{movie.id}}+")");
       });
     {% endfor %}
 });
