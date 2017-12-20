@@ -485,18 +485,22 @@ footer {
 .information-content {
   display: flex;
   margin: auto;
-  height: 35%;
+  height: 49%;
   width: 80%;
 }
 
+.information-img {
+  width: 72%;
+}
+
 .information-img img {
-  height: 362px;
-  width: 220px;
+  height: 101%;
+  width: 98%;
 }
 
 .information-description {
   color: white;
-  width: 65%;
+  width: 71%;
   overflow: auto;
   position: relative;
 }
